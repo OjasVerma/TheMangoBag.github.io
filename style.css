@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+
+}
+#hero{
+    background-image: url(hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.header img{
+    width: 10vw;
+    height: 15vh;
+}
+nav{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    margin-top:4px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+nav ul li{
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.header button{
+    width: 6vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 0.5px solid orange;
+    color: white    ;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.tag{
+    height: 70vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.tag h2{
+    margin: 30px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+}
+.tag button{
+    margin-left: 100px;
+    font-family: 'Roboto Flex', sans-serif;
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    border: orange solid 0.4px;
+    background-color: #ef5734;
+    background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+    cursor: pointer;
+    color: white;
+}
+.header button:hover{
+    animation: ease-in-out;
+    background-color: #ef5734;
+    background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+}
+.active{
+    text-decoration: underline;
+}
+.main{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+.main .left{
+    width: 40vw;
+    height: max-content;
+}
+.main .right{
+    width: 60vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main .right h2{
+    width: max-content;
+    margin: 10px;
+    border-bottom: 2px solid orange;
+}
+.main .right h4{
+    margin: 10px;
+    font-size: larger;
+    width: 50vw;
+}
+.var{
+    margin-top: 30px;
+    text-align: center;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    height:max-content;
+}
+.var img{
+    width: 100vw;
+    height: 100vh;
+}
+.project{
+    width: 100vw;
+    height: max-content;
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+.project .right{
+    width: 60vw;
+    height: max-content;
+}
+.project .right img{
+    width: 60vw;
+    height: 60vh;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.project .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+}
+.aim{
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aim .topic{
+    width: max-content;
+    height: max-content;
+    text-align: center;
+}
+.aim .topic h4{
+    margin:20px;
+}
+.aim .topic img{
+    height: 350px;
+    width: 350px;
+    border-radius: 250px;
+}
+.project-2{
+    width: 100vw;
+    height: max-content;
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+.project-2 .right-2{
+    width: 60vw;
+    height: max-content;
+}
+.project-2 .right-2 img{
+    width: 60vw;
+    height: 60vh;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.project-2 .left-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+}
+.benefits{
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    height: max-content;
+    margin-top: 40px;
+    text-align: center;
+}
+.benefits .b{
+    width: max-content;
+    height: max-content;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+}
+.benefits .b h2{
+    margin: 10px;
+    border-bottom: #ffcc2f solid 2px;
+    width:max-content;
+}
+.benefits .b h3{
+    margin: 10px;
+}
+.promotions{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('soil.jpg');
+    color: white;
+    font-family: 'Macondo', cursive;
+}
+.promotions h3{
+   margin-top: 20px; 
+}
+.promotions img{
+    margin: 10px;
+}
+.footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.footer ul{
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.share{
+    width: auto;
+}
+.share svg{
+    margin: 30px;
+    cursor: pointer;
+}
+
+@media(max-width:850px){
+    .header img{
+        width: 30vw;
+    }
+    .header button{
+        width: 20vw;
+    }
+}
+@media (max-width:450px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero{
+        height: max-content;
+    }
+    .tag{
+        height: max-content;
+    }
+    .tag button{
+        height: 30px;
+    }
+    .footer ul{
+        flex-direction: column;
+    }
+    .footer ul li{
+        margin-bottom: 10px;
+    }
+}
+@media (max-height:350px){
+    .header img{
+        height: 45vh;
+    }
+    .header button{
+        width: 10vw;
+        height: 10vh;
+    }
+    #hero{
+        height: max-content ;
+    }
+}
+@media(max-width:970px){
+    .main{
+        width: 100vw;
+        flex-direction: column;
+    }
+    .main .left{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .main .left img{
+        width: 100vw;
+    }
+    .main .right{
+        width: 100vw;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .aim{
+        flex-direction: column;
+    }
+    .benefits{
+        width: 100vw;
+    }
+    .benefits .b{
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+    }
+    .benefits .b h2{
+        width: 100vw;
+    }
+
+}
+@media(max-width:500px){
+    .project{
+        flex-direction: column-reverse;
+    }
+    .project .left{
+        width: 100vw;
+    }
+    .project .right{
+        width: 100vw;
+    }
+    .project .right img{
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .project-2{
+        flex-direction: column-reverse;
+    }
+    .project-2 .left-2{
+        width: 100vw;
+    }
+    .project-2 .right-2{
+        width: 100vw;
+    }
+    .project-2 .right-2 img{
+        width: 100vw;
+        border-radius: 0px;
+    }
+}
